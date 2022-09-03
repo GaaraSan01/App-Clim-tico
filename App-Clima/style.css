@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+    --azul: rgb(2, 2, 78);
+    --verde: rgb(115, 238, 0);
+    --cinza: #e6e6e6;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -wekit-font-smoothing: antialiased;
+}
+body{
+    background: var(--azul);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    color: var(--verde);
+    width: 50%;
+    margin: 40px auto;
+    justify-content: center;
+}
+.app{
+    padding-bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+.pesquisa{
+    padding-bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+.pesquisa input{
+    width: 50%;
+    padding: 12px;
+
+    background: var(--cinza);
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.pesquisa button {
+    width: 25%;
+    padding: 12px;
+    font-weight: 700;
+    background: #474c97;
+    color: var(--verde);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: filter 0.2s;
+}
+
+.pesquisa button:hover{
+    filter: brightness(0.9);
+}
+.pesquisa p{
+    padding-top: 10px;
+}
+.clima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.clima h2{
+    color: var(--cinza);
+    padding: 15px;
+}
+.local p{
+    color: var(--cinza);
+    padding: 10px;
+    text-align: center;
+}
+#clima{
+    color: var(--cinza);
+    padding-bottom: 16px;
+    text-align: center;  
+}
+
+.table {
+    width: 50%;
+    margin: auto;
+    height: 30vh;
+}
+
+.table table{
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    background: #474c97;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--verde);
+}
+#day_tabe td{
+    font-weight: 700;
+}
+#temp_min td{
+    color: var(--cinza);
+}
+#temp_max td {
+    color: var(--cinza);
+}
